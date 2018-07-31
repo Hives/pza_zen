@@ -1,0 +1,164 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+@import "base";
+
+
+.node { /* Node wrapper */
+
+  .preview & { /* Preview of the content before submitting new or updated content */
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+  .node-title { /* Node title */
+  }
+
+  .user-picture { /* The picture of the node author */
+  }
+
+  .submitted { /* The "posted by" information */
+  }
+
+  .content { /* Node's content wrapper */
+  }
+
+  ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
+  }
+
+}
+
+.node-promoted { /* A node that has been promoted to the front page */
+}
+
+.node-sticky { /* A sticky node (displayed before others in a list) */
+}
+
+.node-by-viewer { /* A node created by the current user */
+}
+
+.node-teaser { /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+
+.node-page { /* Page content node */
+}
+
+.node-article { /* Article content node */
+}
+
+.node-unpublished { /* Unpublished nodes */
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+
+  p.unpublished { /* The word "Unpublished" displayed underneath the content. */
+    @include unpublished-div;
+  }
+}
+
+.page-node {
+  #page-title {
+    // make invisible
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+  }
+}
+
+.node-project.view-mode-full {
+  .field-name-field-title-image {
+    padding: $zen-gutter-width $zen-gutter-width 0;
+    h2 {
+      // make invisible
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px; width: 1px;
+      margin: -1px; padding: 0; border: 0;
+    }
+  }
+  .field-name-field-subtitle {
+    font-size: 1.4em;
+  }
+  .field-name-field-subtitle {
+    @include box-sizing(border-box);
+    border-bottom: thin solid black;
+    padding: 0 $zen-gutter-width $zen-gutter-width;
+
+    h3 {
+      font-weight: normal;
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+  .field-name-body {
+    width: 320px;
+    float: right;
+    @include box-sizing(border-box);
+    padding: $zen-gutter-width;
+    text-align: justify;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    // CKEditor Custom Styles
+    .reduced {
+      font-size: 80%;
+      line-height: 1em;
+     }
+     .tighter {
+      line-height: 1em;
+     }
+
+    img {
+      display: block;
+    }
+
+  }
+  .field-name-field-main-images, .field-name-field-main-image {
+    position: relative;
+    width: 640px;
+    float: left;
+    @include box-sizing(border-box);
+    padding: $zen-gutter-width;
+    img {
+      margin-bottom: $zen-gutter-width;
+      display: block;
+    }
+    .field-item:last-child {
+      img {
+        margin: 0;
+      }
+    }
+    /*
+    &:before {
+      content: "";
+      display: block;
+      width: 960px;
+      margin-left: -$zen-gutter-width/2;
+      border-bottom: thin solid black;
+    }*/
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      margin-left: -$zen-gutter-width/2;
+      border-right: thin solid black;
+    }
+
+  }
+}

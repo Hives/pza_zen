@@ -1,0 +1,213 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+/* line 91, ../sass/_base.scss */
+a {
+  color: inherit;
+}
+/* line 93, ../sass/_base.scss */
+a:hover {
+  color: #f284a5;
+}
+
+/* line 11, ../sass/nodes.scss */
+.node {
+  /* Node wrapper */
+}
+/* line 13, ../sass/nodes.scss */
+.preview .node {
+  /* Preview of the content before submitting new or updated content */
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */
+}
+/* line 17, ../sass/nodes.scss */
+.node .node-title {
+  /* Node title */
+}
+/* line 20, ../sass/nodes.scss */
+.node .user-picture {
+  /* The picture of the node author */
+}
+/* line 23, ../sass/nodes.scss */
+.node .submitted {
+  /* The "posted by" information */
+}
+/* line 26, ../sass/nodes.scss */
+.node .content {
+  /* Node's content wrapper */
+}
+/* line 29, ../sass/nodes.scss */
+.node ul.links {
+  /* Node links. See also the ul.links declaration in the pages.css. */
+}
+
+/* line 34, ../sass/nodes.scss */
+.node-promoted {
+  /* A node that has been promoted to the front page */
+}
+
+/* line 37, ../sass/nodes.scss */
+.node-sticky {
+  /* A sticky node (displayed before others in a list) */
+}
+
+/* line 40, ../sass/nodes.scss */
+.node-by-viewer {
+  /* A node created by the current user */
+}
+
+/* line 43, ../sass/nodes.scss */
+.node-teaser {
+  /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* line 52, ../sass/nodes.scss */
+.node-page {
+  /* Page content node */
+}
+
+/* line 55, ../sass/nodes.scss */
+.node-article {
+  /* Article content node */
+}
+
+/* line 58, ../sass/nodes.scss */
+.node-unpublished {
+  /* Unpublished nodes */
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+/* line 61, ../sass/nodes.scss */
+.node-unpublished p.unpublished {
+  /* The word "Unpublished" displayed underneath the content. */
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* line 67, ../sass/nodes.scss */
+.page-node #page-title {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* line 78, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-title-image {
+  padding: 20px 20px 0;
+}
+/* line 80, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-title-image h2 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+/* line 89, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-subtitle {
+  font-size: 1.4em;
+}
+/* line 92, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-subtitle {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: thin solid black;
+  padding: 0 20px 20px;
+}
+/* line 97, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-subtitle h3 {
+  font-weight: normal;
+  font-size: 0.8em;
+  margin: 0;
+}
+/* line 103, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-body {
+  width: 320px;
+  float: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: justify;
+}
+/* line 110, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 116, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-body .reduced {
+  font-size: 80%;
+  line-height: 1em;
+}
+/* line 120, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-body .tighter {
+  line-height: 1em;
+}
+/* line 124, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-body img {
+  display: block;
+}
+/* line 129, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-main-images, .node-project.view-mode-full .field-name-field-main-image {
+  position: relative;
+  width: 640px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  /*
+  &:before {
+    content: "";
+    display: block;
+    width: 960px;
+    margin-left: -$zen-gutter-width/2;
+    border-bottom: thin solid black;
+  }*/
+}
+/* line 135, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-main-images img, .node-project.view-mode-full .field-name-field-main-image img {
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 140, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-main-images .field-item:last-child img, .node-project.view-mode-full .field-name-field-main-image .field-item:last-child img {
+  margin: 0;
+}
+/* line 152, ../sass/nodes.scss */
+.node-project.view-mode-full .field-name-field-main-images:after, .node-project.view-mode-full .field-name-field-main-image:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin-left: -10px;
+  border-right: thin solid black;
+}

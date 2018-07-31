@@ -1,0 +1,410 @@
+/**
+ * @file
+ * Views Styling
+ */
+
+@import "base";
+
+
+/*
+ * Views' admin tabs
+ *
+ * The views admin tabs use the same classes as the secondary tabs. We prevent
+ * some of our tab styling from bleeding into (and breaking) the Views admin
+ * pages. If your sub-theme isn't used for admin pages, you can remove this
+ * entire section.
+ */
+.views-displays .secondary {
+  li {
+    float: none;
+    margin: 0 6px 0;
+  }
+
+  a:link,
+  a:visited {
+    @include single-text-shadow(none);
+    padding: 2px 7px 3px;
+  }
+
+  .open > a {
+    @include border-radius(7px 7px 0 0);
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .action-list li {
+    margin: 0;
+    &:first-child {
+      @include border-radius(0 7px 0 0);
+    }
+    &:last-child {
+      @include border-radius(0 0 7px 7px);
+    }
+  }
+}
+
+/*
+ * General header
+ */
+
+.page-press, .page-news, .page-about {
+  #content h1 {
+
+    border-bottom: thin solid black;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    &:before {
+      content: "- ";
+    }
+    &:after {
+      content: " -";
+    }
+  }
+}
+
+/*
+ * Press page
+ */
+
+.view-press {
+
+  overflow: hidden;
+  margin-top: $zen-gutter-width;
+  font-size: 0.8em;
+
+  .views-row {
+    width: (960px / 5) - (2 * $zen-gutter-width);
+    text-align: center;
+    margin: $zen-gutter-width;
+
+    float: left;
+    &:nth-child(5n+1) {
+      clear: left;
+    }
+  }
+  .views-field-field-press-image {
+    margin: 0 10px 10px 10px;
+    img {
+      display: block;
+    }
+  }
+}
+
+/*
+ * News page
+ */
+
+.view-news {
+  .views-row {
+    position: relative;
+    border-bottom: thin solid black;
+    clear: both;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 640px;
+      border-right: thin solid black;
+    }
+  }
+  .views-field-field-blog-image {
+    float: left;
+    top: 0;
+    width: 640px;
+    img {
+      display: block;
+      margin: $zen-gutter-width;
+    }
+  }
+  .views-field-created {
+    padding-top: 4em;
+  }
+  .views-field-field-news-title-image {
+    &:after {
+      display: block;
+      content: "---";
+      margin-top: 1em;
+    }
+  }
+  .views-field-created, .views-field-body {
+  }
+  .views-field-created, .views-field-field-news-title-image, .views-field-body {
+    @include box-sizing(border-box);
+    width: 320px;
+    text-align: center;
+    margin-left: 640px;
+    margin-bottom: 1em;
+    padding-left: $zen-gutter-width;
+    padding-right: $zen-gutter-width;
+  }
+}
+
+/*
+ * Home page
+ */
+
+.view-home-page {
+  position: relative;
+
+  .view-content {
+    margin-top: $zen-gutter-width;
+  }
+
+  .views-field-body {
+    strong {
+      font-family: sans-serif;
+      font-size: 0.85em;
+
+      display: inline-block;
+      position: relative;
+      text-indent: -9999px;
+      width: 80px;
+      height: 16px;
+      background-image: url(../images/you-me-logo-b-w-transparent-100.png);
+      background-size: 100%;
+      top: 5px;
+    }
+
+    text-align: justify;
+    line-height: 1.5em;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    opacity: 0;
+    margin: 170px;
+    padding: 50px;
+    // background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,0,0.8);
+    @include transition(opacity 0.3s ease);
+    p {
+      margin-top: 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .views-field-field-home-page-image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    opacity: 1;
+    @include transition(opacity 0.3s ease);
+  }
+  .views-field-field-home-page-image-1 {
+    position: relative;
+    z-index: 0;
+  }
+
+  &:hover {
+    .views-field-body {
+      opacity: 1;
+    }
+    .views-field-field-home-page-image {
+      opacity: 0;
+    }
+  }
+}
+
+/*
+ * About page
+ */
+
+#about-menu {
+  position: fixed;
+  /*top: 0;*/
+  @include box-sizing(border-box);
+
+  width: (960px / 4);
+  margin-top: $zen-gutter-width/2;
+  padding: $zen-gutter-width;
+  /*top: 10px;*/
+
+  &.sticky {
+    position: fixed;
+    top: $header-height;
+    width: 100%;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    @include transition-property(color);
+    @include transition-duration(0.4s);
+
+    &:hover{
+      text-decoration: underline;
+    }
+    &.current {
+      color: rgb(255,0,0);
+    }
+  }
+
+}
+
+.view-about {
+  position: relative;
+  @include box-sizing(border-box);
+
+  text-align: justify;
+
+  margin-left: (960px / 4);
+  margin-right: 0;
+  padding: 0 $zen-gutter-width;
+  width: (960px / 2);
+
+  float: left;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .about-anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+  }
+  table {
+    width: 100%;
+    border: 1;
+    td {
+      vertical-align: top;
+    }
+    td:first-child {
+      width: 50px;
+    }
+  }
+
+  .views-row-3, .views-row-4, .views-row-5, .views-row-6 {
+    font-size: 0.8em;
+  }
+}
+
+#block-views-about-images-sidebar-block {
+  @include box-sizing(border-box);
+  float: right;
+  width: 240px;
+  padding: $zen-gutter-width;
+
+  .block-title {
+    display: none;
+  }
+
+  img {
+    display: block;
+    margin-bottom: $zen-gutter-width;
+  }
+}
+
+/*
+ * Contact page
+ */
+
+.page-contact {
+
+
+  #page-title {
+    display: none;
+  }
+  #content {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 40px auto;
+    padding: 0;
+    border: thin solid black;
+    border-radius: 10px;
+  }
+  #social-buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    a {
+      position: relative;
+      display: inline-block;
+      text-indent: -9999px;
+      overflow: hidden;
+      &:hover {
+        background-position: 100% 0;
+      }
+    }
+    .email {
+      left: 15px;
+      width: 76px;
+      height: 76px;
+      background-image: url('../images/button-email.png');
+    }
+    .facebook {
+      left: 10px;
+      top: 10px;
+      width: 82px;
+      height: 82px;
+      background-image: url('../images/button-facebook.png');
+    }
+    .twitter {
+      top: -6px;
+      width: 70px;
+      height: 70px;
+      background-image: url('../images/button-twitter.png');
+    }
+    .vimeo {
+      width: 70px;
+      height: 70px;
+      background-image: url('../images/button-vimeo.png');
+    }
+  }
+  #email-and-newsletter {
+    font-size: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.view-contact-page {
+  .view-content {
+    & > div {
+      @include box-sizing(border-box);
+      margin-top: 200px;
+      width: 50%;
+      padding: 0 50px;
+      float: left;
+      text-align: center;
+    }
+
+    &:after {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 50%;
+      height: 50%;
+      border-right: thin dotted black;
+      content: '';
+    }
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+  }
+  .views-field-title {
+    margin-bottom: 20px;
+    font-size: 120%;
+  }
+  .address-line {
+    border-bottom: thin dotted black;
+  }
+}

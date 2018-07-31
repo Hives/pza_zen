@@ -1,0 +1,460 @@
+/**
+ * @file
+ * Views Styling
+ */
+/* line 91, ../sass/_base.scss */
+a {
+  color: inherit;
+}
+/* line 93, ../sass/_base.scss */
+a:hover {
+  color: #f284a5;
+}
+
+/*
+ * Views' admin tabs
+ *
+ * The views admin tabs use the same classes as the secondary tabs. We prevent
+ * some of our tab styling from bleeding into (and breaking) the Views admin
+ * pages. If your sub-theme isn't used for admin pages, you can remove this
+ * entire section.
+ */
+/* line 18, ../sass/views-styles.scss */
+.views-displays .secondary li {
+  float: none;
+  margin: 0 6px 0;
+}
+/* line 24, ../sass/views-styles.scss */
+.views-displays .secondary a:link,
+.views-displays .secondary a:visited {
+  text-shadow: none;
+  padding: 2px 7px 3px;
+}
+/* line 29, ../sass/views-styles.scss */
+.views-displays .secondary .open > a {
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+}
+/* line 31, ../sass/views-styles.scss */
+.views-displays .secondary .open > a:hover {
+  color: #333;
+}
+/* line 36, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li {
+  margin: 0;
+}
+/* line 38, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li:first-child {
+  -webkit-border-radius: 0 7px 0 0;
+  -moz-border-radius: 0 7px 0 0;
+  -ms-border-radius: 0 7px 0 0;
+  -o-border-radius: 0 7px 0 0;
+  border-radius: 0 7px 0 0;
+}
+/* line 41, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li:last-child {
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+}
+
+/*
+ * General header
+ */
+/* line 52, ../sass/views-styles.scss */
+.page-press #content h1, .page-news #content h1, .page-about #content h1 {
+  border-bottom: thin solid black;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 59, ../sass/views-styles.scss */
+.page-press #content h1:before, .page-news #content h1:before, .page-about #content h1:before {
+  content: "- ";
+}
+/* line 62, ../sass/views-styles.scss */
+.page-press #content h1:after, .page-news #content h1:after, .page-about #content h1:after {
+  content: " -";
+}
+
+/*
+ * Press page
+ */
+/* line 72, ../sass/views-styles.scss */
+.view-press {
+  overflow: hidden;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+/* line 78, ../sass/views-styles.scss */
+.view-press .views-row {
+  width: 152px;
+  text-align: center;
+  margin: 20px;
+  float: left;
+}
+/* line 84, ../sass/views-styles.scss */
+.view-press .views-row:nth-child(5n+1) {
+  clear: left;
+}
+/* line 88, ../sass/views-styles.scss */
+.view-press .views-field-field-press-image {
+  margin: 0 10px 10px 10px;
+}
+/* line 90, ../sass/views-styles.scss */
+.view-press .views-field-field-press-image img {
+  display: block;
+}
+
+/*
+ * News page
+ */
+/* line 101, ../sass/views-styles.scss */
+.view-news .views-row {
+  position: relative;
+  border-bottom: thin solid black;
+  clear: both;
+}
+/* line 105, ../sass/views-styles.scss */
+.view-news .views-row:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 640px;
+  border-right: thin solid black;
+}
+/* line 115, ../sass/views-styles.scss */
+.view-news .views-field-field-blog-image {
+  float: left;
+  top: 0;
+  width: 640px;
+}
+/* line 119, ../sass/views-styles.scss */
+.view-news .views-field-field-blog-image img {
+  display: block;
+  margin: 20px;
+}
+/* line 124, ../sass/views-styles.scss */
+.view-news .views-field-created {
+  padding-top: 4em;
+}
+/* line 128, ../sass/views-styles.scss */
+.view-news .views-field-field-news-title-image:after {
+  display: block;
+  content: "---";
+  margin-top: 1em;
+}
+/* line 136, ../sass/views-styles.scss */
+.view-news .views-field-created, .view-news .views-field-field-news-title-image, .view-news .views-field-body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 320px;
+  text-align: center;
+  margin-left: 640px;
+  margin-bottom: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*
+ * Home page
+ */
+/* line 151, ../sass/views-styles.scss */
+.view-home-page {
+  position: relative;
+}
+/* line 154, ../sass/views-styles.scss */
+.view-home-page .view-content {
+  margin-top: 20px;
+}
+/* line 158, ../sass/views-styles.scss */
+.view-home-page .views-field-body {
+  text-align: justify;
+  line-height: 1.5em;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  opacity: 0;
+  margin: 170px;
+  padding: 50px;
+  background-color: rgba(255, 255, 0, 0.8);
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+/* line 159, ../sass/views-styles.scss */
+.view-home-page .views-field-body strong {
+  font-family: sans-serif;
+  font-size: 0.85em;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 80px;
+  height: 16px;
+  background-image: url(../images/you-me-logo-b-w-transparent-100.png);
+  background-size: 100%;
+  top: 5px;
+}
+/* line 184, ../sass/views-styles.scss */
+.view-home-page .views-field-body p {
+  margin-top: 0;
+}
+/* line 186, ../sass/views-styles.scss */
+.view-home-page .views-field-body p:last-child {
+  margin: 0;
+}
+/* line 191, ../sass/views-styles.scss */
+.view-home-page .views-field-field-home-page-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+/* line 198, ../sass/views-styles.scss */
+.view-home-page .views-field-field-home-page-image-1 {
+  position: relative;
+  z-index: 0;
+}
+/* line 204, ../sass/views-styles.scss */
+.view-home-page:hover .views-field-body {
+  opacity: 1;
+}
+/* line 207, ../sass/views-styles.scss */
+.view-home-page:hover .views-field-field-home-page-image {
+  opacity: 0;
+}
+
+/*
+ * About page
+ */
+/* line 217, ../sass/views-styles.scss */
+#about-menu {
+  position: fixed;
+  /*top: 0;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 240px;
+  margin-top: 10px;
+  padding: 20px;
+  /*top: 10px;*/
+}
+/* line 227, ../sass/views-styles.scss */
+#about-menu.sticky {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+}
+/* line 232, ../sass/views-styles.scss */
+#about-menu ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 236, ../sass/views-styles.scss */
+#about-menu li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* line 240, ../sass/views-styles.scss */
+#about-menu a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 246, ../sass/views-styles.scss */
+#about-menu a:hover {
+  text-decoration: underline;
+}
+/* line 249, ../sass/views-styles.scss */
+#about-menu a.current {
+  color: red;
+}
+
+/* line 256, ../sass/views-styles.scss */
+.view-about {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: justify;
+  margin-left: 240px;
+  margin-right: 0;
+  padding: 0 20px;
+  width: 480px;
+  float: left;
+}
+/* line 269, ../sass/views-styles.scss */
+.view-about h2 {
+  font-size: 20px;
+}
+/* line 273, ../sass/views-styles.scss */
+.view-about .about-anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+}
+/* line 278, ../sass/views-styles.scss */
+.view-about table {
+  width: 100%;
+  border: 1;
+}
+/* line 281, ../sass/views-styles.scss */
+.view-about table td {
+  vertical-align: top;
+}
+/* line 284, ../sass/views-styles.scss */
+.view-about table td:first-child {
+  width: 50px;
+}
+/* line 289, ../sass/views-styles.scss */
+.view-about .views-row-3, .view-about .views-row-4, .view-about .views-row-5, .view-about .views-row-6 {
+  font-size: 0.8em;
+}
+
+/* line 294, ../sass/views-styles.scss */
+#block-views-about-images-sidebar-block {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  width: 240px;
+  padding: 20px;
+}
+/* line 300, ../sass/views-styles.scss */
+#block-views-about-images-sidebar-block .block-title {
+  display: none;
+}
+/* line 304, ../sass/views-styles.scss */
+#block-views-about-images-sidebar-block img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*
+ * Contact page
+ */
+/* line 317, ../sass/views-styles.scss */
+.page-contact #page-title {
+  display: none;
+}
+/* line 320, ../sass/views-styles.scss */
+.page-contact #content {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 40px auto;
+  padding: 0;
+  border: thin solid black;
+  border-radius: 10px;
+}
+/* line 329, ../sass/views-styles.scss */
+.page-contact #social-buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+/* line 333, ../sass/views-styles.scss */
+.page-contact #social-buttons a {
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+/* line 338, ../sass/views-styles.scss */
+.page-contact #social-buttons a:hover {
+  background-position: 100% 0;
+}
+/* line 342, ../sass/views-styles.scss */
+.page-contact #social-buttons .email {
+  left: 15px;
+  width: 76px;
+  height: 76px;
+  background-image: url("../images/button-email.png");
+}
+/* line 348, ../sass/views-styles.scss */
+.page-contact #social-buttons .facebook {
+  left: 10px;
+  top: 10px;
+  width: 82px;
+  height: 82px;
+  background-image: url("../images/button-facebook.png");
+}
+/* line 355, ../sass/views-styles.scss */
+.page-contact #social-buttons .twitter {
+  top: -6px;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/button-twitter.png");
+}
+/* line 361, ../sass/views-styles.scss */
+.page-contact #social-buttons .vimeo {
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/button-vimeo.png");
+}
+/* line 367, ../sass/views-styles.scss */
+.page-contact #email-and-newsletter {
+  font-size: 80%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 379, ../sass/views-styles.scss */
+.view-contact-page .view-content > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 200px;
+  width: 50%;
+  padding: 0 50px;
+  float: left;
+  text-align: center;
+}
+/* line 388, ../sass/views-styles.scss */
+.view-contact-page .view-content:after {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-right: thin dotted black;
+  content: '';
+}
+/* line 398, ../sass/views-styles.scss */
+.view-contact-page .logo {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+}
+/* line 403, ../sass/views-styles.scss */
+.view-contact-page .views-field-title {
+  margin-bottom: 20px;
+  font-size: 120%;
+}
+/* line 407, ../sass/views-styles.scss */
+.view-contact-page .address-line {
+  border-bottom: thin dotted black;
+}
