@@ -6,11 +6,11 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
-/* line 91, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 a {
   color: inherit;
 }
-/* line 93, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 a:hover {
   color: #f284a5;
 }
@@ -33,7 +33,7 @@ body {
 #skip-link {
   margin: 0;
 }
-/* line 35, ../sass/pages.scss */
+/* line 34, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -51,8 +51,8 @@ body {
 #header {
   position: fixed;
   width: 960px;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 70px;
   margin: 0 10px;
@@ -72,13 +72,13 @@ body {
   transition: border-bottom 0.25s ease;
   */
 }
-/* line 64, ../sass/pages.scss */
+/* line 63, ../sass/pages.scss */
 #header a:link,
 #header a:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 70, ../sass/pages.scss */
+/* line 69, ../sass/pages.scss */
 #header a:hover,
 #header a:focus {
   text-decoration: underline;
@@ -194,7 +194,7 @@ body {
   padding: 0;
 }
 
-/* line 208, ../sass/pages.scss */
+/* line 203, ../sass/pages.scss */
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -235,7 +235,7 @@ div.status {
   /* Normal priority messages */
 }
 
-/* line 233, ../sass/pages.scss */
+/* line 232, ../sass/pages.scss */
 div.warning,
 tr.warning {
   /* Medium priority messages */
@@ -243,7 +243,7 @@ tr.warning {
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-/* line 238, ../sass/pages.scss */
+/* line 237, ../sass/pages.scss */
 div.error,
 tr.error {
   /* High priority messages. See also the .error declaration below. */

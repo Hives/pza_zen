@@ -2,11 +2,11 @@
  * @file
  * Block Styling
  */
-/* line 91, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 a {
   color: inherit;
 }
-/* line 93, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 a:hover {
   color: #f284a5;
 }
@@ -194,8 +194,8 @@ a:hover {
 /* line 126, ../sass/blocks.scss */
 #block-views-featured-projects-block .block-header {
   border-bottom: thin solid black;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
@@ -225,8 +225,8 @@ a:hover {
 }
 /* line 152, ../sass/blocks.scss */
 #block-views-featured-projects-block .views-row {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
   border: 20px solid white;
@@ -236,8 +236,8 @@ a:hover {
 }
 /* line 159, ../sass/blocks.scss */
 #block-views-featured-projects-block .views-row .views-field-field-category, #block-views-featured-projects-block .views-row .views-field-field-title-image, #block-views-featured-projects-block .views-row .views-field-field-subtitle, #block-views-featured-projects-block .views-row .views-field-body, #block-views-featured-projects-block .views-row .carousel-control {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 640px;
   width: 280px;
@@ -296,8 +296,8 @@ a:hover {
 /* line 215, ../sass/blocks.scss */
 #block-views-non-featured-projects-block .controls {
   font-size: 0.8em;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 20px;
   border-top: thin solid black;
@@ -315,8 +315,8 @@ a:hover {
 
 /* line 231, ../sass/blocks.scss */
 .non-featured-project {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
   border-bottom: thin solid black;
@@ -344,9 +344,9 @@ a:hover {
   position: absolute;
   top: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 /* line 258, ../sass/blocks.scss */
@@ -378,9 +378,9 @@ a:hover {
   position: absolute;
   top: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 /* line 290, ../sass/blocks.scss */
@@ -423,19 +423,22 @@ a:hover {
 }
 
 /* line 331, ../sass/blocks.scss */
-.views-field-field-category a.category, .views-field-field-category span.category {
+.views-field-field-category a.category, .views-field-field-category div.category {
   margin-right: 10px;
   font-size: 0.8em;
 }
 
-/* line 338, ../sass/blocks.scss */
-a.category:before, span.category:before {
+/* line 336, ../sass/blocks.scss */
+div.category {
+  display: inline-block;
+}
+
+/* line 341, ../sass/blocks.scss */
+a.category:before, div.category:before {
   position: relative;
   top: 1px;
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   content: "";
   display: inline-block;
@@ -443,24 +446,48 @@ a.category:before, span.category:before {
   height: 10px;
   margin-right: 5px;
 }
-/* line 348, ../sass/blocks.scss */
-a.category.project:before, span.category.project:before {
+/* line 353, ../sass/blocks.scss */
+a.category.project:before, div.category.project:before {
   background-color: #8fcb7c;
 }
-/* line 351, ../sass/blocks.scss */
-a.category.exhibition:before, span.category.exhibition:before {
+/* line 356, ../sass/blocks.scss */
+a.category.exhibition:before, div.category.exhibition:before {
   background-color: #ffc60b;
 }
-/* line 354, ../sass/blocks.scss */
-a.category.research:before, span.category.research:before {
+/* line 359, ../sass/blocks.scss */
+a.category.research:before, div.category.research:before {
   background-color: #f284a5;
 }
-/* line 357, ../sass/blocks.scss */
-a.category.all:before, span.category.all:before {
+/* line 364, ../sass/blocks.scss */
+a.category.regeneration, a.category.retail, a.category.workspaces, a.category.art-spaces, a.category.interiors, div.category.regeneration, div.category.retail, div.category.workspaces, div.category.art-spaces, div.category.interiors {
+  display: none;
+}
+/* line 369, ../sass/blocks.scss */
+a.category.regeneration:before, div.category.regeneration:before {
+  background-color: #82c868;
+}
+/* line 372, ../sass/blocks.scss */
+a.category.retail:before, div.category.retail:before {
+  background-color: #ffc815;
+}
+/* line 375, ../sass/blocks.scss */
+a.category.workspaces:before, div.category.workspaces:before {
+  background-color: #ef7b9e;
+}
+/* line 378, ../sass/blocks.scss */
+a.category.art-spaces:before, div.category.art-spaces:before {
+  background-color: #ebb4eb;
+}
+/* line 381, ../sass/blocks.scss */
+a.category.interiors:before, div.category.interiors:before {
+  background-color: #db980b;
+}
+/* line 389, ../sass/blocks.scss */
+a.category.all:before, div.category.all:before {
   background-color: #9e9f9f;
 }
 
-/* line 366, ../sass/blocks.scss */
+/* line 397, ../sass/blocks.scss */
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
@@ -471,7 +498,7 @@ a.category.all:before, span.category.all:before {
   transition-duration: 0.8s;
 }
 
-/* line 375, ../sass/blocks.scss */
+/* line 407, ../sass/blocks.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -480,7 +507,7 @@ a.category.all:before, span.category.all:before {
   transition-property: height, width;
 }
 
-/* line 383, ../sass/blocks.scss */
+/* line 415, ../sass/blocks.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -490,7 +517,7 @@ a.category.all:before, span.category.all:before {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 395, ../sass/blocks.scss */
+/* line 425, ../sass/blocks.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {

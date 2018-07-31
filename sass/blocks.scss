@@ -328,13 +328,16 @@
 .controls a.category {
   margin-left: 10px;
 }
-.views-field-field-category a.category, .views-field-field-category span.category {
+.views-field-field-category a.category, .views-field-field-category div.category {
   margin-right: 10px;
   font-size: 0.8em;
 }
 
+div.category {
+  display: inline-block;
+}
 
-a.category, span.category {
+a.category, div.category {
   &:before {
     position: relative;
     top: 1px;
@@ -345,6 +348,8 @@ a.category, span.category {
     height: 10px;
     margin-right: 5px;
   }
+
+  // OLD PROJECT COLOURS
   &.project:before {
     background-color: $green;
   }
@@ -354,6 +359,33 @@ a.category, span.category {
   &.research:before {
     background-color: $pink;
   }
+
+  // HIDE NEW PROJECT CATEGORIES FOR NOW (NOT "RESEARCH" THOUGH)
+  &.regeneration, &.retail, &.workspaces, &.art-spaces, &.interiors  {
+    display: none;
+  }
+
+  // NEW PROJECT COLOURS
+  &.regeneration:before {
+    background-color: $mantis;
+  }
+  &.retail:before {
+    background-color: $gold;
+  }
+  &.workspaces:before {
+    background-color: $rose;
+  }
+  &.art-spaces:before {
+    background-color: $lilac;
+  }
+  &.interiors:before {
+    background-color: $ochre;
+  }
+  &.research:before {
+    // DISABLE THIS ONE FOR NOW
+    // background-color: $skyblue;
+  }
+  
   &.all:before {
     background-color: $grey;
   }

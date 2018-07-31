@@ -4,11 +4,11 @@
  *
  * Style anything that isn't in the $content variable.
  */
-/* line 91, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 a {
   color: inherit;
 }
-/* line 93, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 a:hover {
   color: #f284a5;
 }
@@ -133,8 +133,8 @@ a:hover {
 }
 /* line 92, ../sass/nodes.scss */
 .node-project.view-mode-full .field-name-field-subtitle {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: thin solid black;
   padding: 0 20px 20px;
@@ -149,8 +149,8 @@ a:hover {
 .node-project.view-mode-full .field-name-body {
   width: 320px;
   float: right;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
   text-align: justify;
@@ -178,8 +178,8 @@ a:hover {
   position: relative;
   width: 640px;
   float: left;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
   /*

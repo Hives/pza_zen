@@ -4,17 +4,17 @@
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
  */
-/* line 91, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 a {
   color: inherit;
 }
-/* line 93, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 a:hover {
   color: #f284a5;
 }
 
 @media print {
-  /* line 14, ../sass/print.scss */
+  /* line 13, ../sass/print.scss */
   a:link,
   a:visited {
     /* underline all links */
@@ -34,7 +34,7 @@ a:hover {
     font-weight: normal;
     font-size: 16px;
   }
-  /* line 30, ../sass/print.scss */
+  /* line 29, ../sass/print.scss */
   #content a[href^="javascript:"]:after,
   #content a[href^="#"]:after {
     /* Only display useful links. */
@@ -55,7 +55,7 @@ a:hover {
     padding: 0 !important;
   }
 
-  /* line 49, ../sass/print.scss */
+  /* line 46, ../sass/print.scss */
   body,
   #page,
   #main,
@@ -66,7 +66,7 @@ a:hover {
     background-image: none !important;
   }
 
-  /* line 68, ../sass/print.scss */
+  /* line 55, ../sass/print.scss */
   #skip-link,
   #toolbar,
   #navigation,

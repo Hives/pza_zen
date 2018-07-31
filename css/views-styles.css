@@ -2,11 +2,11 @@
  * @file
  * Views Styling
  */
-/* line 91, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 a {
   color: inherit;
 }
-/* line 93, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 a:hover {
   color: #f284a5;
 }
@@ -24,7 +24,7 @@ a:hover {
   float: none;
   margin: 0 6px 0;
 }
-/* line 24, ../sass/views-styles.scss */
+/* line 23, ../sass/views-styles.scss */
 .views-displays .secondary a:link,
 .views-displays .secondary a:visited {
   text-shadow: none;
@@ -32,10 +32,8 @@ a:hover {
 }
 /* line 29, ../sass/views-styles.scss */
 .views-displays .secondary .open > a {
-  -webkit-border-radius: 7px 7px 0 0;
   -moz-border-radius: 7px 7px 0 0;
-  -ms-border-radius: 7px 7px 0 0;
-  -o-border-radius: 7px 7px 0 0;
+  -webkit-border-radius: 7px;
   border-radius: 7px 7px 0 0;
 }
 /* line 31, ../sass/views-styles.scss */
@@ -48,18 +46,14 @@ a:hover {
 }
 /* line 38, ../sass/views-styles.scss */
 .views-displays .secondary .action-list li:first-child {
-  -webkit-border-radius: 0 7px 0 0;
   -moz-border-radius: 0 7px 0 0;
-  -ms-border-radius: 0 7px 0 0;
-  -o-border-radius: 0 7px 0 0;
+  -webkit-border-radius: 0;
   border-radius: 0 7px 0 0;
 }
 /* line 41, ../sass/views-styles.scss */
 .views-displays .secondary .action-list li:last-child {
-  -webkit-border-radius: 0 0 7px 7px;
   -moz-border-radius: 0 0 7px 7px;
-  -ms-border-radius: 0 0 7px 7px;
-  -o-border-radius: 0 0 7px 7px;
+  -webkit-border-radius: 0;
   border-radius: 0 0 7px 7px;
 }
 
@@ -153,8 +147,8 @@ a:hover {
 }
 /* line 136, ../sass/views-styles.scss */
 .view-news .views-field-created, .view-news .views-field-field-news-title-image, .view-news .views-field-body {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 320px;
   text-align: center;
@@ -186,9 +180,9 @@ a:hover {
   margin: 170px;
   padding: 50px;
   background-color: rgba(255, 255, 0, 0.8);
-  -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 /* line 159, ../sass/views-styles.scss */
@@ -218,9 +212,9 @@ a:hover {
   z-index: 1;
   top: 0;
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 /* line 198, ../sass/views-styles.scss */
@@ -244,8 +238,8 @@ a:hover {
 #about-menu {
   position: fixed;
   /*top: 0;*/
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 240px;
   margin-top: 10px;
@@ -272,13 +266,13 @@ a:hover {
 #about-menu a {
   text-decoration: none;
   color: black;
-  -webkit-transition-property: color;
   -moz-transition-property: color;
   -o-transition-property: color;
+  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 /* line 246, ../sass/views-styles.scss */
@@ -293,8 +287,8 @@ a:hover {
 /* line 256, ../sass/views-styles.scss */
 .view-about {
   position: relative;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: justify;
   margin-left: 240px;
@@ -333,8 +327,8 @@ a:hover {
 
 /* line 294, ../sass/views-styles.scss */
 #block-views-about-images-sidebar-block {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: right;
   width: 240px;
@@ -424,8 +418,8 @@ a:hover {
 
 /* line 379, ../sass/views-styles.scss */
 .view-contact-page .view-content > div {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 200px;
   width: 50%;

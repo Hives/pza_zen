@@ -8,11 +8,11 @@
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
-/* line 91, ../../sass/_base.scss */
+/* line 100, ../../sass/_base.scss */
 a {
   color: inherit;
 }
-/* line 93, ../../sass/_base.scss */
+/* line 102, ../../sass/_base.scss */
 a:hover {
   color: #f284a5;
 }
@@ -20,7 +20,7 @@ a:hover {
 /*
  * Center the page.
  */
-/* line 43, ../../sass/layouts/fixed-width.scss */
+/* line 42, ../../sass/layouts/fixed-width.scss */
 #page,
 .region-bottom {
   /* If you want to make the page a fixed width and centered in the viewport,
@@ -33,7 +33,7 @@ a:hover {
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
-/* line 61, ../../sass/layouts/fixed-width.scss */
+/* line 56, ../../sass/layouts/fixed-width.scss */
 #header,
 #content,
 #navigation,
@@ -58,7 +58,7 @@ a:hover {
 /*
  * Containers for grid items and flow items.
  */
-/* line 52, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+/* line 51, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:before, #header:after,
 #main:before,
 #main:after,
