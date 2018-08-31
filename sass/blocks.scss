@@ -362,7 +362,7 @@ a.category, div.category {
 
   // HIDE NEW PROJECT CATEGORIES FOR NOW (NOT "RESEARCH" THOUGH)
   &.regeneration, &.retail, &.workspaces, &.art-spaces, &.interiors  {
-    display: none;
+    /* display: none; */
   }
 
   // NEW PROJECT COLOURS
@@ -382,8 +382,7 @@ a.category, div.category {
     background-color: $ochre;
   }
   &.research:before {
-    // DISABLE THIS ONE FOR NOW
-    // background-color: $skyblue;
+    background-color: $skyblue;
   }
   
   &.all:before {

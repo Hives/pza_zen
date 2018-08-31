@@ -15,7 +15,7 @@
     $classes = strtolower($classes_array[$id]);
     //
     // terrible hack because it puts "art spaces" in as two separate classes and
-    // i can't work out why
+    // i can't work out how to change it
     $classes = str_replace("art spaces", "art-spaces", $classes);
     $class_string = ' class="' . $classes . '"';
 } else {

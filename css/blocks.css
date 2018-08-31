@@ -460,7 +460,7 @@ a.category.research:before, div.category.research:before {
 }
 /* line 364, ../sass/blocks.scss */
 a.category.regeneration, a.category.retail, a.category.workspaces, a.category.art-spaces, a.category.interiors, div.category.regeneration, div.category.retail, div.category.workspaces, div.category.art-spaces, div.category.interiors {
-  display: none;
+  /* display: none; */
 }
 /* line 369, ../sass/blocks.scss */
 a.category.regeneration:before, div.category.regeneration:before {
@@ -482,12 +482,16 @@ a.category.art-spaces:before, div.category.art-spaces:before {
 a.category.interiors:before, div.category.interiors:before {
   background-color: #db980b;
 }
-/* line 389, ../sass/blocks.scss */
+/* line 384, ../sass/blocks.scss */
+a.category.research:before, div.category.research:before {
+  background-color: #a2d4d1;
+}
+/* line 388, ../sass/blocks.scss */
 a.category.all:before, div.category.all:before {
   background-color: #9e9f9f;
 }
 
-/* line 397, ../sass/blocks.scss */
+/* line 396, ../sass/blocks.scss */
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
@@ -498,7 +502,7 @@ a.category.all:before, div.category.all:before {
   transition-duration: 0.8s;
 }
 
-/* line 407, ../sass/blocks.scss */
+/* line 406, ../sass/blocks.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -507,7 +511,7 @@ a.category.all:before, div.category.all:before {
   transition-property: height, width;
 }
 
-/* line 415, ../sass/blocks.scss */
+/* line 414, ../sass/blocks.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -517,7 +521,7 @@ a.category.all:before, div.category.all:before {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 425, ../sass/blocks.scss */
+/* line 424, ../sass/blocks.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {

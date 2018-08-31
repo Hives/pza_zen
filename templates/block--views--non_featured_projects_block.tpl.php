@@ -59,15 +59,6 @@
 
 <div class="controls">
 	Filter:
-	<a class="category project" data-filter=".project" href="#project">Projects</a>
-	<a class="category exhibition" data-filter=".exhibition" href="#exhibition">Exhibitions</a>
-	<a class="category research" data-filter=".research" href="#research">Research</a>
-	<a class="category all" data-filter="*" href="#all">Show all</a>
-</div>
-
-<?php /*
-<div class="controls">
-	Filter:
 	<a class="category regeneration" data-filter=".regeneration" href="#regeneration">Regeneration</a>
 	<a class="category retail" data-filter=".retail" href="#retail">Retail</a>
 	<a class="category workspaces" data-filter=".workspaces" href="#workspaces">Workspaces</a>
@@ -76,7 +67,6 @@
 	<a class="category research" data-filter=".research" href="#research">Research</a>
 	<a class="category all" data-filter="*" href="#all">Show all</a>
 </div>
-*/ ?>
 
 <?php print $content; ?>
 
