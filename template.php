@@ -232,7 +232,8 @@ function pza_zen_views_view_field__field_category($vars){
   foreach ($category_fields as $key => $category_field) {
     $category = $category_field['rendered']['#markup'];
     $sanitised_category = str_replace(" ", "-", strtolower($category));
-    $output[] = '<div class="category ' . $sanitised_category . '">' . $category . '</div>';
+    // $output[] = '<div class="category ' . $sanitised_category . '">' . $category . '</div>';
+    $output[] = '<div class="category ' . $sanitised_category . '"></div>';
   }
 
   // return $vars['output'];
