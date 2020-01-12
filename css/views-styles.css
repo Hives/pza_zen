@@ -419,10 +419,11 @@ a:hover {
 /* line 378, ../sass/views-styles.scss */
 .view-contact-page .view-content {
   margin-top: 110px;
+  height: 270px;
   display: flex;
   align-items: center;
 }
-/* line 383, ../sass/views-styles.scss */
+/* line 384, ../sass/views-styles.scss */
 .view-contact-page .view-content .address-column {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -430,12 +431,12 @@ a:hover {
   width: 50%;
   padding: 0 50px;
 }
-/* line 389, ../sass/views-styles.scss */
+/* line 390, ../sass/views-styles.scss */
 .view-contact-page .view-content .address {
   text-align: center;
   margin: 30px 0;
 }
-/* line 394, ../sass/views-styles.scss */
+/* line 395, ../sass/views-styles.scss */
 .view-contact-page .view-content:after {
   position: absolute;
   top: 25%;
@@ -445,18 +446,18 @@ a:hover {
   border-right: thin dotted black;
   content: '';
 }
-/* line 404, ../sass/views-styles.scss */
+/* line 405, ../sass/views-styles.scss */
 .view-contact-page .logo {
   display: block;
   margin: 0 auto;
   width: 60px;
 }
-/* line 409, ../sass/views-styles.scss */
+/* line 410, ../sass/views-styles.scss */
 .view-contact-page .views-field-title {
   margin-bottom: 20px;
   font-size: 120%;
 }
-/* line 413, ../sass/views-styles.scss */
+/* line 414, ../sass/views-styles.scss */
 .view-contact-page .address-line {
   border-bottom: thin dotted black;
 }
